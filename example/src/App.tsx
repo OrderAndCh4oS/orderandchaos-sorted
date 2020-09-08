@@ -29,7 +29,7 @@ const App = () => {
     const sortColumn = (name: keyof IObj) => () => {
         if (sortColumns === null) return;
         sortBy(name, sortColumns[name]);
-        setSortColumns(prevState => ({
+        setSortColumns((prevState: ISortColumns<IObj>) => ({
             ...prevState,
             [name]: !prevState[name]
         }));
