@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/sorted",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sort an array of objects by it&#x27;s keys",
   "author": "sarcoma",
   "license": "MIT",
