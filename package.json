@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/sorted",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Sort an array of objects by it&#x27;s keys",
   "author": "sarcoma",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "engines": {
     "node": ">=10"
   },
