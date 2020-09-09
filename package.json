@@ -1,12 +1,13 @@
 {
   "name": "@orderandchaos/sorted",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Sort an array of objects by it&#x27;s keys",
   "author": "sarcoma",
   "license": "MIT",
   "repository": "sarcoma/sort-array-by-object-key",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
+  "types": "dist/index.d.ts",
   "source": "src/index.ts",
   "engines": {
     "node": ">=10"
