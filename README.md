@@ -31,13 +31,23 @@ const arr: IObj[] = [
 
 const sortColumns: ISortColumns = makeSortColumns<IObj>(arr);
 
-const sortedByNameAsc = arr.sort(sortOnColumn<IObj>('name', sortColumns['name']));
+// Sort on 'name'
+const sortedByNameAsc = arr.sort(sortOnColumn<IObj>('name', sortColumns.name));
 console.log('Name Asc', sortedByNameAsc);
 
-sortColumns['name'] = !sortColumns['name'];
+sortColumns.name = !sortColumns.name;
 
-const sortedByNameDesc = arr.sort(sortOnColumn<IObj>('name', sortColumns['name']));
+const sortedByNameDesc = arr.sort(sortOnColumn<IObj>('name', sortColumns.name));
 console.log('Name Desc', sortedByNameDesc);
+
+// Sort on 'value'
+const sortedByValueAsc = arr.sort(sortOnColumn<IObj>('value', sortColumns.value));
+console.log('Value Asc', sortedByValueAsc);
+
+sortColumns.value = !sortColumns.value;
+
+const sortedByValueDesc = arr.sort(sortOnColumn<IObj>('value', sortColumns.value));
+console.log('Value Desc', sortedByValueDesc);
 ```
 
 ## License

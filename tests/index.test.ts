@@ -48,4 +48,11 @@ describe('Test sorting', () => {
             expect(arr[i].value).toBe(reverseOrder[i]);
         }
     });
+    test('Sort on misc', () => {
+        arr.sort(sortOnColumn<IObj>('misc', sortColumns['misc']));
+        const order = ['', NaN, 0, null, undefined];
+        for (let i = 0; i < order.length; i++) {
+            expect(arr[i].misc).toBe(order[i]);
+        }
+    });
 });
