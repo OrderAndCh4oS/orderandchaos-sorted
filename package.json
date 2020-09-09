@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/sorted",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Sort an array of objects by it&#x27;s keys",
   "author": "sarcoma",
   "license": "MIT",
@@ -18,7 +18,6 @@
     "prepare": "run-s build",
     "test": "jest",
     "lint": "eslint .",
-    "test:unit": "jest",
     "test:watch": "jest --watch",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
@@ -56,6 +55,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
     "ts-jest": "^24.3.0",
+    "jest": "^24.9.0",
     "typescript": "^3.9.7"
   },
   "files": [

@@ -25,6 +25,7 @@ const sortOnColumn = <T>(name: keyof T, isAsc: boolean = true) => {
 
 export const makeSortColumns = <T>(obj: T[]): ISortColumns<T> => {
     const result: any = {};
+    if (!obj.length) return result;
     for (const key of Object.keys(obj[0])) {
         result[key] = true;
     }

@@ -22,6 +22,7 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
+    "jest": "file:../node_modules/jest",
     "typescript": "file:../node_modules/typescript"
   },
   "devDependencies": {
